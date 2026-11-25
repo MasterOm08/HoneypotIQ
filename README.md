@@ -75,11 +75,12 @@ honeypotiq/
 │       │   └── service/          # DetectionEngineService, BenchmarkService
 │       └── test/java/com/honeypotiq/
 │           └── AlgorithmSuiteTest.java # 20 JUnit 5 correctness, invariant & boundary tests
-├── data/
-│   ├── generate_logs.py          # Synthetic network flow log generator
-│   ├── sample_1k.csv             # 1,000-event test dataset
-│   ├── sample_10k.csv            # 10,000-event test dataset
-│   └── sample_100k.csv           # 100,000-event benchmark dataset
+├── edge_tests
+|   └── data/
+│       ├── generate_logs.py          # Synthetic network flow log generator
+│       ├── sample_1k.csv             # 1,000-event test dataset
+│       ├── sample_10k.csv            # 10,000-event test dataset
+│       └── sample_100k.csv           # 100,000-event benchmark dataset
 ├── frontend/
 │   ├── package.json
 │   └── src/
