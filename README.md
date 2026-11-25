@@ -63,51 +63,28 @@ All four core data structures and algorithms are implemented **100% from scratch
 ```text
 
 honeypotiq/
-
 ├── backend/
-
 │   ├── pom.xml
-
 │   └── src/
-
 │       ├── main/java/com/honeypotiq/
-
 │       │   ├── HoneypotIqApplication.java
-
 │       │   ├── algorithms/       # BitwisePrefixTrie, RedBlackTree, SegmentTree, RandomizedQuickselect
-
 │       │   ├── baseline/         # NaiveHashMapDetector (O(N log N) baseline for benchmarking)
-
 │       │   ├── controller/       # HoneypotController (REST API endpoints)
-
 │       │   ├── model/            # ConnectionEvent, PolicyAction, SourceRiskScore, DTOs
-
 │       │   └── service/          # DetectionEngineService, BenchmarkService
-
 │       └── test/java/com/honeypotiq/
-
 │           └── AlgorithmSuiteTest.java # 20 JUnit 5 correctness, invariant & boundary tests
-
 ├── data/
-
 │   ├── generate_logs.py          # Synthetic network flow log generator
-
 │   ├── sample_1k.csv             # 1,000-event test dataset
-
 │   ├── sample_10k.csv            # 10,000-event test dataset
-
 │   └── sample_100k.csv           # 100,000-event benchmark dataset
-
 ├── frontend/
-
 │   ├── package.json
-
 │   └── src/
-
 │       ├── App.jsx               # SOC Threat Detection & Empirical Benchmark Dashboard
-
 │       └── App.css
-
 └── README.md
 
 ```
